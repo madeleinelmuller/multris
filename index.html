@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>multris - local multiplayer Tetris</title>
+  <style>
+    body {
+      background: #111;
+      color: #eee;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      font-family: sans-serif;
+    }
+    .player {
+      margin: 1em;
+      text-align: center;
+    }
+    canvas {
+      border: .2em solid #555;
+      height: 400px;
+      width: 240px;
+    }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <canvas id="player1" width="240" height="400"></canvas>
+    <div>Score: <span id="score1">0</span></div>
+  </div>
+  <div class="player">
+    <canvas id="player2" width="240" height="400"></canvas>
+    <div>Score: <span id="score2">0</span></div>
+  </div>
+  <script src="tetris.js"></script>
+</body>
+</html>
